@@ -1,0 +1,12 @@
+9/14
+
+1.要將值傳給父元件用 this.$emit,父元件傳給子元件則用props.
+2.監控某個值改變時做某個事可用 watch.
+3.元件與元件之間溝通可用eventBus.
+4.eventBus監聽得事件被呼叫時會使被刪掉的TodoItem回來，使用beforeDestroy避免此狀況。
+
+9/15
+
+1.import組件,在組件使用時,駝峰示命名大寫地方要用"-"連接, 例如: TodoItemsRemaining -> <todo-items-remaining></todo-items-remaining>
+2.eventBus後面不一定要接方法, 也可以改變data值.
+3.eventBus沒傳參數時,監聽方用空括號即可. 例如: eventBus.$on('clearCompleted', () => this.clearCompleted())
